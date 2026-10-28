@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX Designer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Toggle dark theme">
+
+  <header class="site-header">
+    <a href="#hero" class="logo">Nursaya<span>.design</span></a>
+
+    <input type="checkbox" id="burger-toggle" class="visually-hidden" aria-label="Open menu">
+    <label for="burger-toggle" class="burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <img class="hero-photo" src="https://picsum.photos/seed/designer/400/400" alt="Portrait of the designer">
+      <div class="hero-text">
+        <h1>I design interfaces people enjoy using</h1>
+        <p>UI/UX designer: from research and wireframes to polished, accessible products.</p>
+        <a href="#cases" class="cta">View Cases</a>
+      </div>
+    </section>
+
+    <section id="cases" class="section">
+      <h2>Cases</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://picsum.photos/seed/case1/600/400" alt="Mobile banking app preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Mobile App</span>
+            <h3>Banking App Redesign</h3>
+            <a href="#">Read case →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/case2/600/400" alt="E-commerce website preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Web</span>
+            <h3>E-commerce Storefront</h3>
+            <a href="#">Read case →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/case3/600/400" alt="Dashboard preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Dashboard</span>
+            <h3>Analytics Dashboard</h3>
+            <a href="#">Read case →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/case4/600/400" alt="Branding project preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Branding</span>
+            <h3>Startup Brand Identity</h3>
+            <a href="#">Read case →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/case5/600/400" alt="Travel app preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Mobile App</span>
+            <h3>Travel Planner</h3>
+            <a href="#">Read case →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/case6/600/400" alt="Landing page preview" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Web</span>
+            <h3>SaaS Landing Page</h3>
+            <a href="#">Read case →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a UI/UX designer who works in Figma and builds responsive layouts with HTML and CSS. I follow Mobile-First principles and care about accessibility.</p>
+    </section>
+
+    <section id="prices" class="section">
+      <h2>Prices</h2>
+      <div class="grid">
+        <article class="card card-body"><h3>Landing page</h3><p>from $300</p></article>
+        <article class="card card-body"><h3>Mobile app UI</h3><p>from $800</p></article>
+        <article class="card card-body"><h3>Full UX audit</h3><p>from $500</p></article>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <h2>Start a project</h2>
+      <form class="feedback-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required minlength="2">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00" pattern="[0-9+\s()-]{7,}">
+
+        <label for="spec">Link to Technical Specifications</label>
+        <input type="url" id="spec" name="spec" placeholder="https://..." required>
+
+        <button type="submit">Send request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <ul class="socials">
+      <li><a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a></li>
+      <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a></li>
+    </ul>
+    <p class="legal">© 2026 Nursaya Baktybek. All rights reserved.</p>
+    <label for="theme-toggle" class="theme-switch">Dark / Light theme</label>
+  </footer>
+</body>
+</html>
